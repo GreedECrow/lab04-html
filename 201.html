@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>201-lab01</title>
+    <link rel="stylesheet" href="reset.css"/>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-width: 320px;
+            font-size: 1rem;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+            line-height: 1.6;
+            color: white;
+            background-color: black;
+        }
+
+        h1{
+            color: red;
+            background-color: green;
+            font-size: 50px;
+            font-style: italic;
+            font-weight: 1000;
+            font-stretch: expanded;
+            text-align: center;
+        }
+    
+    
+    </style>
+
+
+</head>
+<body>
+    <header>
+        
+            <nav>
+                <a href="*">Home</a>
+                <a href="*">About Me</a>
+                <a href="*">Contact</a>
+            </nav>
+
+    </header>
+    <main>
+        <h1>201 Class Lab 01</h1>
+    </main>
+
+    <P style= color:purple; style >
+        <span style="background-color: yellow;">Please tell me your name?</span>
+    </P>
+
+    <P style= color:blue; style >
+        <span style="background-color:green ;">Name your Clan.</span>
+    </P>
+
+    <P style= color:grey; style >
+        <span style="background-color: darkred;">What is it like?</span>
+    </P>
+
+    <P style= color:orange; style >
+        <span style="background-color: darkgray;">Q1</span>
+    </P>
+
+    <Footer></Footer>
+
+    <script>
+        let user;
+        let clanName;
+        let clan;
+        let faction;
+        let reply;
+
+        alert("This is a members only establishment?");
+
+        function userName (){
+            user = prompt("Please tell me your name?");
+            alert("Thank you " + user + ", Next question.");
+            console.log(user);
+        }
+
+        userName()
+
+
+        function clanAnswer() {
+            clan = prompt (user + ", Name your Clan? Ventrue, Tremere, Toreador, Brujah or one of the others.").toLowerCase();
+            console.log(clan);
+
+            if (clan === "ventrue"){
+                myClan = "you're all arrogant buggers";
+            }else if (clan === "toreador"){
+                myClan = "you're all stuck up buggers";
+            }else if (clan === "tremere"){
+                myClan = "you can all be spooky buggers";
+            } else if (clan === "brujah"){
+                myClan = "you're all argumentative buggers";
+            }else{
+                myClan = "I'm Nosferatu";
+            }
+
+            alert("Welcome to Elysium clan " + clan + ", everyone already knows " + myClan + ", as if you didn't know.");
+
+        }
+
+        clanAnswer()
+
+        function isLike() {
+            faction = prompt ("Next question " + user + ". Are you with the Camarilla, the Anarch or something else?").toLowerCase();
+            console.log(faction);
+
+            if (faction === "camarilla"){
+                reply = confirm("Do you enjoy being a dog for the Prince."){
+                    
+                }
+            } else if (faction === "anarch"){
+                reply = "Still pretending you're not the Cam with different but equally pretencious naming schemes? How is the Baron."; 
+            } else {
+                reply = "Elysium or not, it's bloody dangerious for you to be here. If I were you " + user + " I'd keep my that to my self.";
+            }
+
+            alert (reply);
+        }
+
+        isLike()
+
+
+
+    </script>
+</body>
+</html>

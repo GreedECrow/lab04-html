@@ -1,17 +1,16 @@
-//let userName = prompt("Hi User :) Please tell me your name!")
-//console.log(userName);
+let userName = prompt("Hi User :) Please tell me your name!")
+console.log(userName);
 
-//if (confirm("Did you say " + userName)){
-   // const welcomeMsg = alert("Welcome to my page " + userName);
-//}else {const welcomeMsg = alert("Hello Stranger");
-//}
+if (confirm("Did you say " + userName)){
+    const welcomeMsg = alert("Welcome to my page " + userName);
+}else {const welcomeMsg = alert("Hello Stranger");
+}
 
 
-//function changeColor(colorName) {
-   // document.body.style.background = colorName;
-//}
+function changeColor(colorName) {
+    document.body.style.background = colorName;
+}
 
-"use strict"
 
 
 
@@ -21,7 +20,7 @@ function yourName(){
 }
 
 
-function timeOfDay() {
+function timeOfDay(){
     let time = prompt("what hour is it? 0-23");
     let location = prompt("What country are you in?");
     let message ="";
